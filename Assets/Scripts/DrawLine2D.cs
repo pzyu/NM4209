@@ -94,15 +94,16 @@ public class DrawLine2D : MonoBehaviour {
             if (!m_Points.Contains(mousePosition)) {
                 m_Points.Insert(0, mousePosition);
 
-                m_Points[m_Points.Count - 2] = new Vector2(mousePosition.x + 0.1f, -20);
-                m_Points[m_Points.Count - 1] = new Vector2(mousePosition.x, 0);
+                m_Points[m_Points.Count - 2] = new Vector2(mousePosition.x + 1.0f, -30);
+                m_Points[m_Points.Count - 1] = new Vector2(mousePosition.x + 0.01f, 0);
                 
-                if (m_Points.Count >= 100) {
-                    m_Points.RemoveAt(m_Points.Count - 5);
+                if (m_Points.Count >= 200) {
+                    float lastX = m_Points[m_Points.Count - 6].x;
+                    m_Points.RemoveAt(m_Points.Count - 6);
 
-                    //m_Points[m_Points.Count - 5] = new Vector2(mousePosition.x + 0.1f, -20);
-                    m_Points[m_Points.Count - 4] = new Vector2(mousePosition.x - 20.0f, 0);
-                    m_Points[m_Points.Count - 3] = new Vector2(mousePosition.x - 20.0f, -20);
+                    m_Points[m_Points.Count - 5] = new Vector2(lastX - 10.0f, 0);
+                    m_Points[m_Points.Count - 4] = new Vector2(lastX - 10.0f, -30);
+                    m_Points[m_Points.Count - 3] = new Vector2(lastX - 0.0f, -30);
                 }
 
                 m_LineRenderer.positionCount = m_Points.Count;

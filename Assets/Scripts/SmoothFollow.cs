@@ -17,10 +17,19 @@ public class SmoothFollow : MonoBehaviour
     [SerializeField]
     private Vector2 offset;
 
+    [SerializeField]
+    private bool randomizeSmoothTime = false;
+    [SerializeField]
+    private float randomizeInterval = 1.0f;
+
+    [SerializeField]
+    private bool isSmooth = true;
+
     // Start is called before the first frame update
-    void Start()
-    {
-        
+    void Start() {
+        if (randomizeSmoothTime) {
+            StartCoroutine(RandomizeSmoothTime());
+        }
     }
 
     // Update is called once per frame
@@ -35,7 +44,17 @@ public class SmoothFollow : MonoBehaviour
         }
 
 
-        // Smoothly move the camera towards that target position
-        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+        if (isSmooth) {
+            // Smoothly move the camera towards that target position
+            transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+        } else {
+            transform.position = targetPosition;
+        }
+    }
+
+    private IEnumerator RandomizeSmoothTime() {
+        yield return new WaitForSeconds(Random.Range(2, 5));
+        smoothTime = Random.Range(0.2f, 0.7f);
+        StartCoroutine(RandomizeSmoothTime());
     }
 }

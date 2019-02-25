@@ -50,9 +50,15 @@ TagManager:
   - name: Walls
     uniqueID: 2541757847
     locked: 0
-  - name: Interactable
+  - name: BackLayer
+    uniqueID: 2852541505
+    locked: 0
+  - name: Player
     uniqueID: 1436365145
     locked: 0
   - name: Line
     uniqueID: 2724007621
+    locked: 0
+  - name: FrontLayer
+    uniqueID: 2983838665
     locked: 0
