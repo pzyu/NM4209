@@ -1,5 +1,5 @@
 # soundwave
-<img src="screenshot.png" width="200">
+<img src="screenshot.png" width="500">
 soundwave is a voice-controlled endless runner where you wade the surfer through treacherous waves with the power of your voice!
 
 ## Instructions
