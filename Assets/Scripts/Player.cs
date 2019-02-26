@@ -54,6 +54,6 @@ public class Player : MonoBehaviour
 
     public void DamagePlayer() {
         Debug.Log("PLAYER DAMAGED");
-        GameController.gameControllerInstance.PauseGame();
+        //GameController.gameControllerInstance.PauseGame();
     }
 }

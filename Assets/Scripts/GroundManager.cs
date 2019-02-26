@@ -49,7 +49,7 @@ public class GroundManager : MonoBehaviour
 
     private void HandleMovement() {
         foreach (GameObject ground in groundList) {
-            ground.transform.localPosition -= transform.right * Time.deltaTime * GameController.gameControllerInstance.speed;
+            ground.transform.localPosition -= transform.right * 0.01f * GameController.gameControllerInstance.speed;
 
             if (ground.transform.localPosition.x <= -groundSize && canMove) {
                 canMove = false;

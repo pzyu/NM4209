@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/repos/NM4209/Builds/soundwave.apk
+C:/repos/NM4209 - Builds/soundwave (Android).apk
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 SceneListEnd?
@@ -22,6 +22,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.P
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 2d37f4c670895e23a6a2e57efe92ed33 Assembly-CSharp.dll:cakeslice.OutlineEffect
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
+0f4d370bde920fa143e89df42ce2d25f Assembly-CSharp.dll:.ShaderEffect_Unsync
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.Editor.dll:UnityEngine.Advertisements.Editor.Placeholder
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -55,6 +56,7 @@ fc108ce7d98c40ac0907e8ca7f500c76 UnityEngine.UI.dll:UnityEngine.UI.Text
 0fd6822f6177297bd0eb4d83cc7a9030 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
+5941e61a1839c70f1871b2370438ab77 Assembly-CSharp.dll:.ShaderToTexture
 98ad81e9f689a492509f07e75b810aaa Unity.TextMeshPro.dll:TMPro.TMP_InputField
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:cakeslice.OutlineAnimation
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -89,6 +91,7 @@ fc108ce7d98c40ac0907e8ca7f500c76 UnityEngine.UI.dll:UnityEngine.UI.Text
 0fd6822f6177297bd0eb4d83cc7a9030 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
+3da309352a1883dae2e14d71c432a803 Assembly-CSharp.dll:.BWEffect
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 06f0fef534ca4c1d6064fd77a26bf722 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 780e8f682b3221346c034a6712a0fd25 UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -123,22 +126,27 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 d4c7f745fedd96023305b78e60b93a07 Assembly-CSharp.dll:cakeslice.Outline
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
 7fb9de8dcf73854b6b328eca1f7a6e6d Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsTracker
+5543629576de3bb1cfe29e75fbd38b64 Assembly-CSharp.dll:.ShaderEffect_BleedingColors
 e2d96566061ce8c9faab825555e78469 Assembly-CSharp.dll:.MovingPlatform
 94017dcc9f00fe671ea7dc427b4da011 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
+e393acfb75d23e08de447fd480fb8320 Assembly-CSharp.dll:.ShaderEffect_Tint
 021f8a9778e6db6c950c5726c6820f7d Assembly-CSharp.dll:.VoiceInteractable
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:cakeslice.Rotate
 1d620243fcdff0ea939d2c200c5fb106 Assembly-CSharp.dll:.Ground
 4aac268d7e435f7a65add91aaba819a4 Assembly-CSharp.dll:.CFX_Demo_RandomDir
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 16366e2d11d4dec25f5900e3c62cd16d Assembly-CSharp.dll:.GroundManager
+029e4221e31e9fe90d5cde8ebcec6054 DemiLib.dll:DG.DemiLib.External.DeHierarchyComponent
 3f5031037e63abe5dcf87c278e01a4de Assembly-CSharp.dll:.CFX_Demo_RotateCamera
 3c4b81086e27ad1c56dc1dd1d7a7dc40 Assembly-CSharp.dll:.DrawLine2D
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 5d27c6e85ec89cfab8577e9e26695e88 Assembly-CSharp.dll:.CFX_AutoDestructShuriken
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.Dolphin
 704dcd31abc789439bc3f3cd10b58c2b DOTween.dll:DG.Tweening.Core.DOTweenComponent
 49cbb3369dc9b7b81a56e2f87e67a737 DOTween.dll:DG.Tweening.Core.DOTweenSettings
 660deb0ce569359218f0ba85b7ce0e3a Assembly-CSharp.dll:.CFX_LightIntensityFade
+9a8be2305e2bf1ceb81f67f84f52c7df Assembly-CSharp.dll:.ShaderEffect_CRT
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 2b9a0c56dbdbb332016d1baf7ceef8a3 Assembly-CSharp.dll:.Player
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -178,28 +186,21 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 66fa1d1447b9cd3593baff1859160a98 Assembly-CSharp.dll:cakeslice.MaterialSwitcher
+e6c22e8a82c00c7c0a70b2b200b07a94 Assembly-CSharp.dll:.ShaderEffect_CorruptedVram
 a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
+425d92ac71ee31abd9c68cc6dbbc6263 DOTweenPro.dll:DG.Tweening.DOTweenPath
+d452b4ce4b4cca771c54091cc2623c68 DOTweenPro.dll:DG.Tweening.DOTweenVisualManager
 5fc094978ce3e3591a7500ed380d854a Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:cakeslice.Toggle
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.DiyEffect__FullOnly
+9e5dd7a375aaa49be124e9b57fb43ad5 Assembly-CSharp.dll:DG.Tweening.DOTweenAnimation
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
-577c21d5f2c3c11b292b8c19af5d3573 Assembly-CSharp.dll:.GameController
+3114e5c28fccb7f1a0da64de6ffd6e6d Assembly-CSharp.dll:.GameController
 68955bdcddbad136dc714022da458f79 Assembly-CSharp.dll:.SmoothFollow
 e70e7b311a1620c2e899545b2e1fdfae Assembly-CSharp.dll:.CFX_Demo_RandomDirectionTranslate
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
-8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.Dolphin
-0f4d370bde920fa143e89df42ce2d25f Assembly-CSharp.dll:.ShaderEffect_Unsync
-5941e61a1839c70f1871b2370438ab77 Assembly-CSharp.dll:.ShaderToTexture
-3da309352a1883dae2e14d71c432a803 Assembly-CSharp.dll:.BWEffect
-5543629576de3bb1cfe29e75fbd38b64 Assembly-CSharp.dll:.ShaderEffect_BleedingColors
-e393acfb75d23e08de447fd480fb8320 Assembly-CSharp.dll:.ShaderEffect_Tint
-9a8be2305e2bf1ceb81f67f84f52c7df Assembly-CSharp.dll:.ShaderEffect_CRT
-e6c22e8a82c00c7c0a70b2b200b07a94 Assembly-CSharp.dll:.ShaderEffect_CorruptedVram
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.DiyEffect__FullOnly
 24257086f4de8c51c895e4b911239cbd Assembly-CSharp.dll:.ShaderEffect_Scanner
-029e4221e31e9fe90d5cde8ebcec6054 DemiLib.dll:DG.DemiLib.External.DeHierarchyComponent
-425d92ac71ee31abd9c68cc6dbbc6263 DOTweenPro.dll:DG.Tweening.DOTweenPath
-d452b4ce4b4cca771c54091cc2623c68 DOTweenPro.dll:DG.Tweening.DOTweenVisualManager
-9e5dd7a375aaa49be124e9b57fb43ad5 Assembly-CSharp.dll:DG.Tweening.DOTweenAnimation
+8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
+29d156e6c47ef16783826f58e75a6bc5 Assembly-CSharp.dll:.PlayerOld

@@ -26,6 +26,8 @@ public class DrawLine2D : MonoBehaviour {
     private Vector2 endPoint;
     private Vector2 endPointBase;
 
+    private List<Vector2> initialPoints;
+
     public virtual LineRenderer lineRenderer {
         get {
             return m_LineRenderer;
@@ -68,6 +70,16 @@ public class DrawLine2D : MonoBehaviour {
 
         endPoint = new Vector2(-10, -10);
         endPointBase = new Vector2(10, -10);
+
+        initialPoints = new List<Vector2>();
+
+        for (int i = 0; i < m_Points.Count; i++) {
+            initialPoints.Add(m_Points[i]);
+        }
+    }
+
+    public void ResetPolygon() {
+        m_PolyCollider2D.points = initialPoints.ToArray();
     }
 
 
@@ -80,42 +92,36 @@ public class DrawLine2D : MonoBehaviour {
     protected virtual void Update() {
         cursor.transform.position = new Vector3(cursor.transform.position.x, 0 + MicInput.MicLoudness * 20, 0);
 
-        if (Input.GetMouseButtonDown(0)) {
-            //Reset();
-        }
-        //if (Input.GetMouseButton(0) && canDraw) {
         if (canDraw) {
-            //Debug.Log("Can draw");
             StartCoroutine(ResetInterval());
-            //Vector2 mousePosition = m_Camera.ScreenToWorldPoint(Input.mousePosition);
             Vector2 mousePosition = cursor.transform.position;
-
-            //m_Points.Insert
-            if (!m_Points.Contains(mousePosition)) {
+            
+            if (!m_Points.Contains(mousePosition) && m_Points.Count >= 5) {
                 m_Points.Insert(0, mousePosition);
 
                 m_Points[m_Points.Count - 2] = new Vector2(mousePosition.x + 1.0f, -30);
                 m_Points[m_Points.Count - 1] = new Vector2(mousePosition.x + 0.01f, 0);
-                
-                if (m_Points.Count >= 200) {
-                    float lastX = m_Points[m_Points.Count - 6].x;
-                    m_Points.RemoveAt(m_Points.Count - 6);
 
-                    m_Points[m_Points.Count - 5] = new Vector2(lastX - 10.0f, 0);
-                    m_Points[m_Points.Count - 4] = new Vector2(lastX - 10.0f, -30);
-                    m_Points[m_Points.Count - 3] = new Vector2(lastX - 0.0f, -30);
+                float lastX = m_Points[m_Points.Count - 6].x;
+
+                m_Points[m_Points.Count - 5] = new Vector2(lastX - 10.0f, 0);
+                m_Points[m_Points.Count - 4] = new Vector2(lastX - 10.0f, -30);
+                m_Points[m_Points.Count - 3] = new Vector2(lastX - 0.0f, -30);
+
+                if (m_Points.Count >= 200) {
+                    m_Points.RemoveAt(m_Points.Count - 6);
                 }
 
                 m_LineRenderer.positionCount = m_Points.Count;
                 m_LineRenderer.SetPosition(m_LineRenderer.positionCount - 1, mousePosition);
-                if (m_PolyCollider2D != null && m_AddCollider && m_Points.Count > 1) {
+                if (m_PolyCollider2D != null && m_AddCollider && m_Points.Count >= 5) {
                     m_PolyCollider2D.points = m_Points.ToArray();
                 }
             }
         }
     }
 
-    protected virtual void Reset() {
+    public void Reset() {
         if (m_LineRenderer != null) {
             m_LineRenderer.positionCount = 0;
         }
@@ -124,6 +130,12 @@ public class DrawLine2D : MonoBehaviour {
         }
         if (m_PolyCollider2D != null && m_AddCollider) {
             m_PolyCollider2D.pathCount = 0;
+
+            for (int i = 0; i < initialPoints.Count; i++) {
+                m_Points.Add(initialPoints[i]);
+            }
+
+            m_PolyCollider2D.points = m_Points.ToArray();
         }
     }
 

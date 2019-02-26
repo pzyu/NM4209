@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour
     private GameObject cursor;
     [SerializeField]
     private GameObject ground;
+    [SerializeField]
+    private DrawLine2D drawLine;
 
     [SerializeField]
     public float speed;
@@ -40,6 +42,7 @@ public class GameController : MonoBehaviour
     private int currentPosition;
 
     public bool isGamePaused = true;
+
 
     private void Awake() {
         if (gameControllerInstance == null) {
@@ -105,6 +108,9 @@ public class GameController : MonoBehaviour
         initPosition = cursor.transform.position.x;
         
         DOTween.To(() => shaderEffect.shift, x => shaderEffect.shift = x, 3, 1).SetEase(Ease.Flash, 10);
+
+        cursor.transform.position = new Vector3(0, 0, 0);
+        drawLine.Reset();
     }
 
     private void HandleMovement() {
